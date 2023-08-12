@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s;
+    font-family: 'Julee', cursive;
+
+    font-family: 'Press Start 2P', cursive;
+}
+
+footer{
+    height: 10vh;
+    width: 100vw;
+    background-color: aqua;
+    display: grid;
+    place-items: center;
+}
+
+input{
+    background: none;
+    font-size: 1.2em;
+    border:none;
+}
+
+input:hover{
+    font-size: 1em;
+    color: red;
+}
+
+div{
+    height: 90vh;
+    width: 100vw;
+    background: url("/img/fondo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  
+}
+
+
+.tracker{
+    position: fixed;
+    transform: translate(-50%,-50%);
+    width:50px;
+    height: 50px;
+    z-index: 1;
+    pointer-events: none;
+    transition: all .15s;
+    border-radius: 50%;
+   
+}
+
+
+.tracker img{
+    width: 110%;
+    height: 110%;
+    object-fit: contain;
+    
+
+}
+
+
+button{
+    width: 5em;
+    height: 5em;
+    background: none;
+    border:none;
+
+}
+button img{
+    width: 300%;
+    height: 300%;
+    object-fit: contain;
+}
