@@ -1,7 +1,7 @@
 
 
 const utilPokemon = {
-    aleatorea: function (entrada) {
+    aleatoria: function (entrada) {
         let numero = Math.round(Math.random() * entrada);
         return numero;
     },

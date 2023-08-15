@@ -4,11 +4,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all .3s;
-    font-family: 'Julee', cursive;
-
-    font-family: 'Press Start 2P', cursive;
+/*    transition: all .3s; */
+    font-family: 'Press Start 2P', Julee, cursive;
 }
+
+.fondo{
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+.pantalla {
+    width: 100vw;
+    height: 90vh;
+    z-index: -30;
+} 
 
 footer{
     height: 10vh;
@@ -28,46 +39,38 @@ input:hover{
     font-size: 1em;
     color: red;
 }
-
+/*
 div{
     height: 90vh;
     width: 100vw;
-    background: url("/img/fondo1.jpg");
+    background-image: url("/img/fondo1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-  
-}
-
+} */
 
 .tracker{
     position: fixed;
-    transform: translate(-50%,-50%);
-    width:50px;
+/*    transform: translate(-50%,-50%); */
+    width: 50px;
     height: 50px;
     z-index: 1;
     pointer-events: none;
-    transition: all .15s;
+/*    transition: all .15s; */
     border-radius: 50%;
-   
 }
-
 
 .tracker img{
     width: 110%;
     height: 110%;
     object-fit: contain;
-    
-
 }
-
 
 button{
     width: 5em;
     height: 5em;
     background: none;
-    border:none;
-
+    border: none;
 }
 button img{
     width: 300%;
