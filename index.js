@@ -37,13 +37,18 @@ function agregarPokemon() {
     btnPokemon.style.top = utilPokemon.aleatoria(400) + 'px';
     btnPokemon.style.left = utilPokemon.aleatoria(400) + 'px';
 
-    //Generar nuevas posiciones aleatorias cada 3 segundos
+    //Generar nuevas posiciones aleatorias cada 2 segundos
     setInterval(() => {
         const maxX = window.innerWidth - 110;
         const maxY = window.innerHeight - 110;
         btnPokemon.style.top = utilPokemon.aleatoria(maxY) + 'px';
         btnPokemon.style.left = utilPokemon.aleatoria(maxY) + 'px';
-    }, 3000);
+    }, 2000);
+
+    // Hacer que el botón desaparezca después de 5 segundos (5000 ms)
+    setTimeout(() => {
+        btnPokemon.style.display = "none";
+    }, 5000);
 
     // Generar posiciones aleatorias dentro del viewport
     const maxX = window.innerWidth - 110; // Restamos el tamaño del botón
